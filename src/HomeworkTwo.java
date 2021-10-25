@@ -74,7 +74,7 @@ public class HomeworkTwo {
         System.out.println(myarray[1] + " " + myarray[0]);
     }
 
-    public static void task6() { //тяжелое утро
+    public static void task6() { //тяжелое утро 2
         Scanner sc = new Scanner(System.in);
         System.out.println("введите число");
 
