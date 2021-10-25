@@ -144,7 +144,6 @@ public class HomeworkTwo {
         int min = array[0];
         int medium = 0;
         for (int i = 0; i < n; i++) {
-
             if (min > array[i]) {
                 min = array[i];
             }
@@ -153,6 +152,23 @@ public class HomeworkTwo {
             }
             medium += array[i];
         }
+
+        boolean sorted = false;
+        int temp;
+        while(!sorted) {
+            sorted = true;
+            for (int i = 0; i < n-1; i++) {
+                if (array[i] > array[i+1]) {
+                    temp = array[i];
+                    array[i] = array[i+1];
+                    array[i+1] = temp;
+                    sorted = false;
+                }
+            }
+        }
+        for (int i = 0; i < n; i++)
+        System.out.print(array[i] + "  ");
+        System.out.println(" ");
 
 
         System.out.println("min " + min);
